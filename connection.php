@@ -1,7 +1,7 @@
 <?php
 $result = array();
 try {
-    $dbh = new PDO('mysql:host=localhost;dbname=65149', '65149', 'Thomas20051');
+    $dbh = new PDO('mysql:host=localhost;dbname='65149', '65149', '';
     $dbh->prepare('SELECT * FROM users');
     $dbh->execute();
     $result = $dbh->fetch(PDO::FETCH_ASSOC);
